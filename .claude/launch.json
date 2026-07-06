@@ -1,0 +1,18 @@
+{
+  "version": "1.0",
+  "configurations": [
+    {
+      "name": "Frontend (Angular dev server)",
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["start"],
+      "port": 4200,
+      "cwd": "frontend"
+    },
+    {
+      "name": "Backend (Spring Boot)",
+      "runtimeExecutable": "mvn",
+      "runtimeArgs": ["-f", "/Users/patrick/Documents/04_Développement/WEB/projects/cbao/facturation/backend/pom.xml", "spring-boot:run", "-Dspring-boot.run.profiles=dev"],
+      "port": 8080
+    }
+  ]
+}
