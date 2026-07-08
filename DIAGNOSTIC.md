@@ -130,7 +130,7 @@ Cette clé est dans le dépôt VCS. Quiconque y accède peut forger des tokens J
 ### [SEC-04] Tokens Consul ACL Committés en VCS
 
 **Fichiers :**
-- `backend/src/main/resources/config/application-prod.yml:11` → `acl-token: ed16b7ac-0250-5066-5cd4-e6f612dcad38`
+- `backend/src/main/resources/config/application-prod.yml:11` → `acl-token: `
 - `backend/src/main/resources/config/application-dev.yml:17` → même token
 
 **Sévérité :** CRITIQUE — Credentials en clair dans le dépôt
@@ -151,7 +151,7 @@ Régénérer immédiatement le token Consul compromis.
 **Sévérité :** IMPORTANT
 
 ```typescript
-clientSecret: 'uoUs3tFxSGhhjtbRK5JKQFaknAzjkSlf',
+clientSecret: 'unSecretClientKeycloakExposéDansLeBundle',  // ← exposé dans le bundle JS
 grantType: 'password'  // OAuth 2.1 ROPC — déprécié
 ```
 
